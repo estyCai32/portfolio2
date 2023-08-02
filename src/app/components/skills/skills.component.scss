@@ -1,0 +1,15 @@
+.skills-conteiner {
+  text-align: center;
+  .skills_info {
+    h2{
+      font-size: 2rem;
+      font-family: var(--poppins-regular)!important;
+      font-weight: 700;
+    }
+    h4{
+      font-size: 1.125rem;
+      font-weight: 500;
+      font-family: var(--poppins-regular)!important;
+    }
+  }
+}

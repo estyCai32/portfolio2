@@ -1,3 +1,6 @@
 <app-navbar></app-navbar>
-<app-home></app-home>
+<div class="content" [@routerAnimation]="getRouteAnimation(router)">
+  <router-outlet #router="outlet"></router-outlet>
+</div>
+
 
