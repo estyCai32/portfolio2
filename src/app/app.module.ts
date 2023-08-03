@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
@@ -13,6 +13,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     NgbModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgbProgressbarModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

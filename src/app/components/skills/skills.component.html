@@ -4,39 +4,64 @@
       <h2>Skills</h2>
       <h4>Mi skills técnicos</h4>
     </div>
-    <!-- <div class="accordion accordion-flush col-6" id=" ">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-        </div>
-      </div>
-    </div> -->
 
     <div ngbAccordion class="col-12 col-lg-6 mb-2">
       <div ngbAccordionItem>
         <h2 ngbAccordionHeader class="m-0">
-          <button ngbAccordionButton>First</button>
+          <button ngbAccordionButton>
+            <div class="btn-img d-flex align-items-center">
+              <mat-icon>format_paint</mat-icon>
+            </div>
+            <div class="btn-text ms-4">
+              <h3 class="p-0 m-0">FrontEnd</h3>
+            </div>
+          </button>
         </h2>
         <div ngbAccordionCollapse>
           <div ngbAccordionBody>
-            <ng-template>Content for the first item</ng-template>
+            <ng-template>
+              <div class="skill-list d-flex align-items-center mb-4" *ngFor="let i of habilidadesFront">
+                <img [src]="i.img">
+                <div class="skill-info w-100 ms-2">
+                  <div class="skill-txt d-flex justify-content-between">
+                    <div class="skill-title">{{i.title}}</div>
+                    <div class="skill-porc">{{i.porcentaje}}%</div>
+                  </div>
+                  <p class="m-0"><ngb-progressbar type="primary" [value]="i.porcentaje" height="8px"></ngb-progressbar></p>
+                </div>
+              </div>
+            </ng-template>
           </div>
         </div>
       </div>
     </div>
+
     <div ngbAccordion class="col-12 col-lg-6">
       <div ngbAccordionItem>
         <h2 ngbAccordionHeader class="m-0">
-          <button ngbAccordionButton>First</button>
+          <button ngbAccordionButton>
+            <div class="btn-img d-flex align-items-center">
+              <mat-icon>code</mat-icon>
+            </div>
+            <div class="btn-text ms-4">
+              <h3 class="p-0 m-0">BackEnd</h3>
+            </div>
+          </button>
         </h2>
         <div ngbAccordionCollapse>
           <div ngbAccordionBody>
-            <ng-template>Content for the first item</ng-template>
+            <ng-template>
+              <div class="skill-list d-flex align-items-center mb-2" *ngFor="let i of habilidadesBack">
+                <img [src]="i.img">
+                <div class="skill-info w-100 ms-2">
+                  <div class="skill-txt d-flex justify-content-between">
+                    <div class="skill-title">{{i.title}}</div>
+                    <div class="skill-porc">{{i.porcentaje}}%</div>
+                  </div>
+                  <p class="m-0"><ngb-progressbar type="primary" [value]="i.porcentaje" height="8px"></ngb-progressbar></p>
+                </div>
+              </div>
+            </ng-template>
           </div>
         </div>
       </div>
