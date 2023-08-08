@@ -1,0 +1,57 @@
+.about_info {
+  h2{
+    font-size: 2rem;
+    font-family: var(--poppins-regular)!important;
+    font-weight: 700;
+  }
+  h4{
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: var(--poppins-regular)!important;
+  }
+}
+
+.img_avatar{
+  width: 20vw;
+  text-align: start;
+}
+
+.about_info{
+  p{
+    text-align: center;
+  }
+}
+
+.about_left{
+  justify-content: space-evenly;
+}
+
+
+@media (max-width: 992px) {
+  .img_avatar{
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .about_info{
+    text-align: center;
+    margin-bottom: 0px;
+
+
+      h2{
+        margin-bottom: 5px;
+      }
+      h4{
+        margin: 2px;
+      }
+
+  }
+
+  .about_conteiner{
+    margin-top: 5vh;
+  }
+
+  .about_btn{
+    margin-top: 5vh;
+  }
+}
