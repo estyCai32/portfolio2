@@ -1,0 +1,40 @@
+.title{
+  text-align: center;
+  h2{
+    font-size: 2rem;
+    font-family: var(--poppins-regular)!important;
+    font-weight: 700;
+  }
+}
+
+.carta {
+  width: 220px;
+  height: 220px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #e3e3e3,
+               -20px -20px 60px #ffffff;
+
+  img {
+    width: 100px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .title{
+    margin-top: 6rem;
+  }
+
+  .cards-conteiner{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem!important;
+
+    .carta{
+      margin-bottom: 15px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

@@ -10,7 +10,7 @@
     li{
       margin-bottom: 15px;
       img{
-        width: 40px;
+        width: 65px;
       }
     }
   }
@@ -35,6 +35,8 @@
 
 
 
+
+
 @media (max-width: 992px) {
   .order1 {
     order: 1;
@@ -49,10 +51,31 @@
   }
 
   .img-avatar{
-    width: 80%;
+    width: 70%;
   }
 
   .info{
+    margin-top: 1rem;
+  }
+
+  .info__btns{
+    flex-direction: column;
+
+    button{
+      height: 50px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .icon{
+    width: 40px!important;
+  }
+
+  .home__conteiner{
     margin-top: 2rem;
   }
 
