@@ -1,0 +1,21 @@
+.carta {
+  margin-bottom: 1rem;
+
+  .card_img{
+    width: 100px;
+  }
+ }
+
+ @media (max-width: 992px) {
+  .title{
+    margin-top: 1rem;
+  }
+  .carta{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+  .title{
+    margin-top: 2rem;
+  }
+ }

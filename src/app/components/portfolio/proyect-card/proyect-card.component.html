@@ -1,0 +1,13 @@
+<div class="carta d-flex p-5">
+  <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
+    <img [src]="empresa.img" class="card_img">
+  </div>
+  <div class="col-lg-8 col-12">
+    <div class="card-info">
+      <h2 class="text-start title">{{empresa.title}}</h2>
+      <p class="info_desc text-start col-10">{{empresa.descripcion}}</p>
+      <button class="btn btn-outline-primary p-2 d-flex align-items-center" (click)="redirigir(empresa.link)">Ver <mat-icon class="ms-2">arrow_forward_ios</mat-icon> </button>
+    </div>
+  </div>
+</div>
+

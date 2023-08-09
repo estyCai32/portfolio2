@@ -16,6 +16,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 import { register } from 'swiper/element/bundle';
+import { ProyectCardComponent } from './components/portfolio/proyect-card/proyect-card.component';
 // register Swiper custom elements
 register();
 
@@ -27,7 +28,8 @@ register();
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ProyectCardComponent
   ],
   imports: [
     BrowserModule,

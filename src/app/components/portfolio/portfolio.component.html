@@ -1,27 +1,14 @@
 <div class="container min-vh-100 d-flex justify-content-center align-items-center home">
   <div class="row w-100">
-<!-- Swiper -->
-<swiper-container class="mySwiper" navigation="true" pagination="true">
-  <swiper-slide>
-    <img src="assets/imgs/emoji-bg.png" style="width: 300px">
-  </swiper-slide>
-  <swiper-slide>
-    <img src="assets/imgs/emoji-bg.png" style="width: 300px">
-  </swiper-slide>
-  <swiper-slide>
-    <img src="assets/imgs/emoji-bg.png" style="width: 300px">
-  </swiper-slide>
-  <swiper-slide>
-    <img src="assets/imgs/emoji-bg.png" style="width: 300px">
-  </swiper-slide>
-  <swiper-slide>
-    <img src="assets/imgs/emoji-bg.png" style="width: 300px">
-  </swiper-slide>
-</swiper-container>
-
-<script>
-
-</script>
-
+    <div class="col-12 d-flex flex-column justify-content-center align-items-center title">
+      <h2 class="m-0">Portfolio</h2>
+      <h4>Mas recientes trabajos</h4>
+    </div>
+    <!-- Swiper -->
+    <swiper-container class="mySwiper" navigation="true" pagination="true">
+      <swiper-slide *ngFor="let empresa of empresas">
+        <app-proyect-card [empresa]="empresa"></app-proyect-card>
+      </swiper-slide>
+    </swiper-container>
   </div>
 </div>
