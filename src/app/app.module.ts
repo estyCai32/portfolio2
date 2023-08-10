@@ -17,6 +17,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 import { register } from 'swiper/element/bundle';
 import { ProyectCardComponent } from './components/portfolio/proyect-card/proyect-card.component';
+import { DarkSwitchComponent } from './layout/dark-switch/dark-switch.component';
 // register Swiper custom elements
 register();
 
@@ -29,7 +30,8 @@ register();
     SkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    ProyectCardComponent
+    ProyectCardComponent,
+    DarkSwitchComponent
   ],
   imports: [
     BrowserModule,
